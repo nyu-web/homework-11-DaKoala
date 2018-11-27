@@ -16,6 +16,10 @@
                     <font-awesome-icon icon="gamepad" />
                     Game lover and amateur game developer
                 </p>
+                <div class="intro__btn-wrapper">
+                    <router-link to="/about" class="btn">About me</router-link>
+                    <router-link to="/projects" class="btn">Projects</router-link>
+                </div>
             </header>
             <img class="photo" src="../assets/img/photo.jpeg" />
         </main>
@@ -70,5 +74,9 @@ export default {
         &:before {
             content: '';
         }
+    }
+
+    .intro__btn-wrapper {
+        margin-top: 50px;
     }
 </style>

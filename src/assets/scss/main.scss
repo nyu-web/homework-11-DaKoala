@@ -4,3 +4,25 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 0.6em 1.5em;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 100px;
+  background: linear-gradient(left top, $blue, $bright-blue);
+  &:hover {
+    background: $blue;
+  }
+  &:active {
+    background: $dark-blue;
+  }
+  &:not(first-child) {
+    margin-left: 10px;
+  }
+}
