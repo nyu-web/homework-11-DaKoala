@@ -1,7 +1,7 @@
 <template>
     <div>
         <navigation></navigation>
-        <main class="main-container">
+        <main class="container container--row">
             <header class="intro">
                 <h1 class="intro__name">Yijie "Billy" Zou</h1>
                 <p class="intro__title">
@@ -42,13 +42,6 @@ export default {
 
     .nav {
         display: flex;
-    }
-
-    .main-container {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin: 50px 10%;
     }
 
     .photo {
