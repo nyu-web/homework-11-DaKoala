@@ -2,6 +2,7 @@
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 @import "config";
 @import "function";
+@import "animation";
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -16,7 +17,7 @@
   box-sizing: border-box;
   color: #fff;
   border-radius: 100px;
-  background: linear-gradient(left top, $blue, $bright-blue);
+  background: linear-gradient(to left top, $blue, $bright-blue);
   &:hover {
     background: $blue;
   }
