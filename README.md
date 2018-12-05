@@ -33,3 +33,30 @@ Webpack is used to handle to add pre-loader such as PostCSS, Babel and Sass Load
 ### Sass
 
 Stylesheet we be implemented using Sass .
+
+## To-do list
+
+### Pages
+
+- [x] Home
+- [x] About
+- [ ] Photo Gallery
+- [ ] Custom control video/audio page
+- [ ] Homework page
+
+### Features
+
+- [x] Navigation bar
+- [x] Flexbox or grid
+- [x] Organized stylesheet files with BEM
+- [x] Semantic HTML
+- [x] Semantic classnames
+- [ ] @media-queries supporting iPhoneX
+    - Should work for portrait and landscape
+    - Mobile navigation that slides in or down
+- [ ] Touch gestures
+- [x] Keyframes
+- [x] Gradients
+- [ ] Multimedia element and handmade controls
+- [ ] Accessibility
+- [ ] Render photo gallery
