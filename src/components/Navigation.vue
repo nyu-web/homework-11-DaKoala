@@ -51,6 +51,7 @@ export default {
         height: 100%;
         padding: 0 2em;
         font-size: 30px;
+        font-weight: bold;
         text-decoration: none;
         color: #fff;
 
