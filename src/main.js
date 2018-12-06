@@ -5,14 +5,22 @@ import {
     faCode,
     faGamepad,
 } from '@fortawesome/free-solid-svg-icons';
+import {
+    faJsSquare,
+    faPython,
+} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 import router from './router';
 import store from './store';
 
-library.add(faGamepad);
-library.add(faCode);
-library.add(faGraduationCap);
+library.add(
+    faGamepad,
+    faCode,
+    faGraduationCap,
+    faJsSquare,
+    faPython,
+);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
