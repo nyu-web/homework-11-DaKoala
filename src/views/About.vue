@@ -45,22 +45,8 @@
                     </p>
                 </template>
                 <template v-else>
-                    <h2 class="intro__title">
-                        Programming Languages
-                    </h2>
-                    <div class="intro__line"></div>
-                    <p class="intro__para">
-                        <span class="icon__js">
-                            <font-awesome-icon :icon="['fab', 'js-square']"></font-awesome-icon>
-                        </span>
-                        JavaScript
-                    </p>
-                    <p class="intro__para">
-                        <span class="icon__python">
-                            <font-awesome-icon :icon="['fab', 'python']"></font-awesome-icon>
-                        </span>
-                        Python
-                    </p>
+                    <tech-stack-item v-for="(item, i) in techStack" :section="item"
+                                     :key="item + i"></tech-stack-item>
                 </template>
             </article>
         </main>
@@ -69,13 +55,32 @@
 
 <script>
 import Navigation from '../components/Navigation.vue';
+import TechStackItem from '../components/TechStackItem.vue';
 
 export default {
     name: 'About',
-    components: { Navigation },
+    components: {
+        Navigation,
+        TechStackItem,
+    },
     data() {
         return {
             aboutIsActive: true,
+            techStack: [
+                {
+                    title: 'Programming Languages',
+                    items: [
+                        {
+                            iconList: ['fab', 'js-square'],
+                            text: 'JavaScript(Browser and Node.js)',
+                        },
+                        {
+                            iconList: ['fab', 'python'],
+                            text: 'Python',
+                        },
+                    ],
+                },
+            ],
         };
     },
     methods: {
@@ -97,6 +102,7 @@ export default {
         cursor: pointer;
         z-index: 100;
         left: 20%;
+        user-select: none;
     }
 
     .title--deactive {
@@ -123,6 +129,15 @@ export default {
         @include fade-in;
     }
 
+    .intro__para-item {
+        display: inline-block;
+        margin-top: 0.5em;
+        margin-left: 1em;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
     .intro__para--indent {
         &:before {
             content: '\00a0\00a0';
@@ -141,13 +156,5 @@ export default {
             color: $blue;
             text-decoration: none;
         }
-    }
-
-    .icon__js {
-        color: #f7df1e;
-    }
-
-    .icon__python {
-        color: #4584b6;
     }
 </style>
