@@ -36,7 +36,7 @@ export default {
     }
 
     .tech__text {
-        color: $light-black;
+        color: $dark-black-grey;
         font-size: 1.5em;
         line-height: 1.5em;
     }
