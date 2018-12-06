@@ -4,7 +4,7 @@
         <div class="tech__line"></div>
         <div class="tech__text">
             <span class="tech__item" v-for="(item, i) in section.items" :key="i">
-                <font-awesome-icon :icon="item.iconList" v-if="item.iconList"></font-awesome-icon>
+                <font-awesome-icon :icon="item.iconList || ['fas', 'code']"></font-awesome-icon>
                 {{item.text}}
             </span>
         </div>
